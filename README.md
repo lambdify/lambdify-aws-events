@@ -1,12 +1,12 @@
 ## AWS Java Lightweight Events
-The lightweight version of AWS Lambda events for java.
+Lightweight version of the entities that represents AWS Events.
 
 ## Why another AWS Lambda API?
 Amazon Web Services used to have a standard API which depends on a set of third-party libraries to make their
 development routine easier. Although it is a great solution and works very well, due to the nature of how AWS Lambda
 loads your functions, it may lead to long cold starts.
 
-This set of entities were designed to have the least possible set of dependencies, ensuring you will have a very
+This set of entities were designed to have _no dependencies at all_, ensuring you will have a very
 lightweight zip to deploy your functions.
 
 ## Reporting Bugs/Feature Requests
