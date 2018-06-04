@@ -1,0 +1,21 @@
+modelVersion: 4.0.0
+
+parent:
+  groupId: io.skullabs.boilerplates
+  artifactId: java-8
+  version: 1.0.0
+
+groupId: org.lambdify
+artifactId: lambdify-aws-events-parent
+version: 0.6.0.Final
+packaging: pom
+
+properties:
+ version.jackson: "2.9.5"
+
+modules:
+ - "apigateway"
+ - "dynamodb"
+ - "s3"
+
+scm: { url: "git@github.com:lambdify/lambdify.git" }

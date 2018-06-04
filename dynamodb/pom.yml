@@ -1,0 +1,14 @@
+modelVersion: 4.0.0
+
+parent:
+  groupId: org.lambdify
+  artifactId: lambdify-aws-events-parent
+  version: 0.6.0.Final
+  relativePath: "../pom.yml"
+
+groupId: org.lambdify
+artifactId: lambdify-aws-events-dynamodb
+packaging: jar
+
+scm: { url: "git@github.com:lambdify/lambdify.git" }
+
