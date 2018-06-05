@@ -20,7 +20,8 @@ import lombok.*;
 /**
  * Represents and AmazonS3 event.
  */
-@EqualsAndHashCode @ToString
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class S3Event extends S3EventNotification implements Serializable, Cloneable {
 
     private static final long serialVersionUID = -8046575090948662044L;
