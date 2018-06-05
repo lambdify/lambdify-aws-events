@@ -15,6 +15,7 @@ package lambdify.aws.events.dynamodb;
 
 import java.io.Serializable;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 /**
@@ -23,8 +24,9 @@ import lombok.*;
 @EqualsAndHashCode @ToString
 public class DynamodbEvent implements Serializable, Cloneable {
 
-    private static final long serialVersionUID = -2354616079899981231L;
+    private static final long serialVersionUID = -2616079899981354231L;
 
+    @JsonProperty("Records")
     private List<DynamodbStreamRecord> records;
 
     /**
@@ -47,7 +49,7 @@ public class DynamodbEvent implements Serializable, Cloneable {
          * Gets the event source arn of DynamoDB
          * @return event source arn
          */
-        public String getEventSourceARN() {
+        @JsonProperty("eventSourceARN") public String getEventSourceARN() {
             return eventSourceARN;
         }
 
@@ -55,7 +57,7 @@ public class DynamodbEvent implements Serializable, Cloneable {
          * Sets the event source arn of DynamoDB
          * @param eventSourceARN A string containing the event source arn
          */
-        public void setEventSourceARN(String eventSourceARN) {
+        @JsonProperty("eventSourceARN") public void setEventSourceARN(String eventSourceARN) {
             this.eventSourceARN = eventSourceARN;
         }
     }

@@ -13,6 +13,7 @@
 package lambdify.aws.events.dynamodb;
 
 import java.io.Serializable;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 /**
@@ -175,7 +176,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"S": "Hello"</code>
      */
 
-    public void setS(String s) {
+    @JsonProperty("S") public void setS(String s) {
         this.s = s;
     }
 
@@ -192,7 +193,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"S": "Hello"</code>
      */
 
-    public String getS() {
+    @JsonProperty("S") public String getS() {
         return this.s;
     }
 
@@ -238,7 +239,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
 
-    public void setN(String n) {
+    @JsonProperty("N") public void setN(String n) {
         this.n = n;
     }
 
@@ -263,7 +264,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
 
-    public String getN() {
+    @JsonProperty("N") public String getN() {
         return this.n;
     }
 
@@ -319,7 +320,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code>
      */
 
-    public void setB(java.nio.ByteBuffer b) {
+    @JsonProperty("B") public void setB(java.nio.ByteBuffer b) {
         this.b = b;
     }
 
@@ -343,7 +344,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code>
      */
 
-    public java.nio.ByteBuffer getB() {
+    @JsonProperty("B") public java.nio.ByteBuffer getB() {
         return this.b;
     }
 
@@ -390,7 +391,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
      */
 
-    public java.util.List<String> getSS() {
+    @JsonProperty("SS") public java.util.List<String> getSS() {
         return sS;
     }
 
@@ -408,7 +409,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
      */
 
-    public void setSS(java.util.List<String> sS) {
+    @JsonProperty("SS") public void setSS(java.util.List<String> sS) {
         this.sS = null;
     }
 
@@ -483,7 +484,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
 
-    public java.util.List<String> getNS() {
+    @JsonProperty("NS") public java.util.List<String> getNS() {
         return nS;
     }
 
@@ -509,7 +510,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
 
-    public void setNS(java.util.List<String> nS) {
+    @JsonProperty("NS") public void setNS(java.util.List<String> nS) {
         if ( nS == null ) {
             this.nS = null;
             return;
@@ -597,7 +598,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
      */
 
-    public java.util.List<java.nio.ByteBuffer> getBS() {
+    @JsonProperty("BS") public java.util.List<java.nio.ByteBuffer> getBS() {
         return bS;
     }
 
@@ -615,7 +616,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
      */
 
-    public void setBS(java.util.List<java.nio.ByteBuffer> bS) {
+    @JsonProperty("BS") public void setBS(java.util.List<java.nio.ByteBuffer> bS) {
         this.bS = bS;
     }
 
@@ -682,7 +683,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code>
      */
 
-    public java.util.Map<String, AttributeValue> getM() {
+    @JsonProperty("M") public java.util.Map<String, AttributeValue> getM() {
         return m;
     }
 
@@ -700,7 +701,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code>
      */
 
-    public void setM(java.util.Map<String, AttributeValue> m) {
+    @JsonProperty("M") public void setM(java.util.Map<String, AttributeValue> m) {
         this.m = m;
     }
 
@@ -758,7 +759,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"L": ["Cookies", "Coffee", 3.14159]</code>
      */
 
-    public java.util.List<AttributeValue> getL() {
+    @JsonProperty("L") public java.util.List<AttributeValue> getL() {
         return l;
     }
 
@@ -776,7 +777,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"L": ["Cookies", "Coffee", 3.14159]</code>
      */
 
-    public void setL(java.util.List<AttributeValue> l) {
+    @JsonProperty("L") public void setL(java.util.List<AttributeValue> l) {
         this.l = l;
     }
 
@@ -844,7 +845,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"NULL": true</code>
      */
 
-    public void setNULL(Boolean nULLValue) {
+    @JsonProperty("NULL") public void setNULL(Boolean nULLValue) {
         this.nULLValue = nULLValue;
     }
 
@@ -861,7 +862,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"NULL": true</code>
      */
 
-    public Boolean getNULL() {
+    @JsonProperty("NULL") public Boolean getNULL() {
         return this.nULLValue;
     }
 
@@ -916,7 +917,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *        <code>"BOOL": true</code>
      */
 
-    public void setBOOL(Boolean bOOL) {
+    @JsonProperty("BOOL") public void setBOOL(Boolean bOOL) {
         this.bOOL = bOOL;
     }
 
@@ -933,7 +934,7 @@ public class AttributeValue implements Serializable, Cloneable {
      *         <code>"BOOL": true</code>
      */
 
-    public Boolean getBOOL() {
+    @JsonProperty("BOOL") public Boolean getBOOL() {
         return this.bOOL;
     }
 

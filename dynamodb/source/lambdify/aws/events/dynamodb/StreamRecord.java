@@ -1,11 +1,25 @@
+/*
+ * Copyright 2013-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
+ * the License. A copy of the License is located at
+ *
+ * http://aws.amazon.com/apache2.0
+ *
+ * or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions
+ * and limitations under the License.
+ */
 package lambdify.aws.events.dynamodb;
 
 import java.io.Serializable;
 import java.util.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 @ToString @EqualsAndHashCode
 public class StreamRecord implements Serializable {
+
     private Date approximateCreationDateTime;
     private Map<String, AttributeValue> keys;
     private Map<String, AttributeValue> newImage;
@@ -17,11 +31,11 @@ public class StreamRecord implements Serializable {
     public StreamRecord() {
     }
 
-    public void setApproximateCreationDateTime(Date approximateCreationDateTime) {
+    @JsonProperty("ApproximateCreationDateTime") public void setApproximateCreationDateTime(Date approximateCreationDateTime) {
         this.approximateCreationDateTime = approximateCreationDateTime;
     }
 
-    public Date getApproximateCreationDateTime() {
+    @JsonProperty("ApproximateCreationDateTime") public Date getApproximateCreationDateTime() {
         return this.approximateCreationDateTime;
     }
 
@@ -30,11 +44,11 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public Map<String, AttributeValue> getKeys() {
+    @JsonProperty("Keys") public Map<String, AttributeValue> getKeys() {
         return this.keys;
     }
 
-    public void setKeys(Map<String, AttributeValue> keys) {
+    @JsonProperty("Keys") public void setKeys(Map<String, AttributeValue> keys) {
         this.keys = keys;
     }
 
@@ -61,11 +75,11 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public Map<String, AttributeValue> getNewImage() {
+    @JsonProperty("NewImage") public Map<String, AttributeValue> getNewImage() {
         return this.newImage;
     }
 
-    public void setNewImage(Map<String, AttributeValue> newImage) {
+    @JsonProperty("NewImage") public void setNewImage(Map<String, AttributeValue> newImage) {
         this.newImage = newImage;
     }
 
@@ -92,11 +106,11 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public Map<String, AttributeValue> getOldImage() {
+    @JsonProperty("OldImage") public Map<String, AttributeValue> getOldImage() {
         return this.oldImage;
     }
 
-    public void setOldImage(Map<String, AttributeValue> oldImage) {
+    @JsonProperty("OldImage") public void setOldImage(Map<String, AttributeValue> oldImage) {
         this.oldImage = oldImage;
     }
 
@@ -123,11 +137,11 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public void setSequenceNumber(String sequenceNumber) {
+    @JsonProperty("SequenceNumber") public void setSequenceNumber(String sequenceNumber) {
         this.sequenceNumber = sequenceNumber;
     }
 
-    public String getSequenceNumber() {
+    @JsonProperty("SequenceNumber") public String getSequenceNumber() {
         return this.sequenceNumber;
     }
 
@@ -136,11 +150,11 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public void setSizeBytes(Long sizeBytes) {
+    @JsonProperty("SizeBytes") public void setSizeBytes(Long sizeBytes) {
         this.sizeBytes = sizeBytes;
     }
 
-    public Long getSizeBytes() {
+    @JsonProperty("SizeBytes") public Long getSizeBytes() {
         return this.sizeBytes;
     }
 
@@ -149,11 +163,11 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public void setStreamViewType(String streamViewType) {
+    @JsonProperty("StreamViewType") public void setStreamViewType(String streamViewType) {
         this.streamViewType = streamViewType;
     }
 
-    public String getStreamViewType() {
+    @JsonProperty("StreamViewType") public String getStreamViewType() {
         return this.streamViewType;
     }
 
@@ -167,7 +181,7 @@ public class StreamRecord implements Serializable {
     }
 
     public StreamRecord withStreamViewType(StreamViewType streamViewType) {
-        this.setStreamViewType(streamViewType);
+        this.setStreamViewType(streamViewType.toString());
         return this;
     }
 }
