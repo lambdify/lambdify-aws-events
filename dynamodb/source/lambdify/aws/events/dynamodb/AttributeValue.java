@@ -141,9 +141,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * initialize any additional object members.
      * 
      * @param s
-     *        An attribute of type String. For example:</p>
-     *        <p>
-     *        <code>"S": "Hello"</code>
+     *        An attribute of type String.
      */
     public AttributeValue(String s) {
         setS(s);
@@ -154,9 +152,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * initialize any additional object members.
      * 
      * @param sS
-     *        An attribute of type String Set. For example:</p>
-     *        <p>
-     *        <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
+     *        An attribute of type String Set.
      */
     public AttributeValue(java.util.List<String> sS) {
         setSS(sS);
@@ -171,9 +167,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param s
-     *        An attribute of type String. For example:</p>
-     *        <p>
-     *        <code>"S": "Hello"</code>
+     *        An attribute of type String.
      */
 
     @JsonProperty("S") public void setS(String s) {
@@ -188,9 +182,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"S": "Hello"</code>
      * </p>
      * 
-     * @return An attribute of type String. For example:</p>
-     *         <p>
-     *         <code>"S": "Hello"</code>
+     * @return An attribute of type String.
      */
 
     @JsonProperty("S") public String getS() {
@@ -206,9 +198,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param s
-     *        An attribute of type String. For example:</p>
-     *        <p>
-     *        <code>"S": "Hello"</code>
+     *        An attribute of type String.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -230,11 +220,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param n
-     *        An attribute of type Number. For example:</p>
-     *        <p>
-     *        <code>"N": "123.45"</code>
-     *        </p>
-     *        <p>
+     *        An attribute of type Number.
      *        Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
@@ -255,11 +241,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      * </p>
      * 
-     * @return An attribute of type Number. For example:</p>
-     *         <p>
-     *         <code>"N": "123.45"</code>
-     *         </p>
-     *         <p>
+     * @return An attribute of type Number.
      *         Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages
      *         and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
@@ -281,11 +263,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param n
-     *        An attribute of type Number. For example:</p>
-     *        <p>
-     *        <code>"N": "123.45"</code>
-     *        </p>
-     *        <p>
+     *        An attribute of type Number.
      *        Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      * @return Returns a reference to this object so that method calls can be chained together.
@@ -315,9 +293,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param b
-     *        An attribute of type Binary. For example:</p>
-     *        <p>
-     *        <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code>
+     *        An attribute of type Binary.
      */
 
     @JsonProperty("B") public void setB(java.nio.ByteBuffer b) {
@@ -339,9 +315,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * {@code position}.
      * </p>
      * 
-     * @return An attribute of type Binary. For example:</p>
-     *         <p>
-     *         <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code>
+     * @return An attribute of type Binary.
      */
 
     @JsonProperty("B") public java.nio.ByteBuffer getB() {
@@ -367,9 +341,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param b
-     *        An attribute of type Binary. For example:</p>
-     *        <p>
-     *        <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code>
+     *        An attribute of type Binary.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -386,9 +358,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
      * </p>
      * 
-     * @return An attribute of type String Set. For example:</p>
-     *         <p>
-     *         <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
+     * @return An attribute of type String Set.
      */
 
     @JsonProperty("SS") public java.util.List<String> getSS() {
@@ -404,9 +374,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param sS
-     *        An attribute of type String Set. For example:</p>
-     *        <p>
-     *        <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
+     *        An attribute of type String Set.
      */
 
     @JsonProperty("SS") public void setSS(java.util.List<String> sS) {
@@ -427,9 +395,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param sS
-     *        An attribute of type String Set. For example:</p>
-     *        <p>
-     *        <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
+     *        An attribute of type String Set.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -452,9 +418,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param sS
-     *        An attribute of type String Set. For example:</p>
-     *        <p>
-     *        <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code>
+     *        An attribute of type String Set.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -475,11 +439,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      * </p>
      * 
-     * @return An attribute of type Number Set. For example:</p>
-     *         <p>
-     *         <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code>
-     *         </p>
-     *         <p>
+     * @return An attribute of type Number Set.
      *         Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages
      *         and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
@@ -501,11 +461,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param nS
-     *        An attribute of type Number Set. For example:</p>
-     *        <p>
-     *        <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code>
-     *        </p>
-     *        <p>
+     *        An attribute of type Number Set.
      *        Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      */
@@ -537,11 +493,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param nS
-     *        An attribute of type Number Set. For example:</p>
-     *        <p>
-     *        <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code>
-     *        </p>
-     *        <p>
+     *        An attribute of type Number Set.
      *        Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      * @return Returns a reference to this object so that method calls can be chained together.
@@ -570,11 +522,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param nS
-     *        An attribute of type Number Set. For example:</p>
-     *        <p>
-     *        <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code>
-     *        </p>
-     *        <p>
+     *        An attribute of type Number Set.
      *        Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and
      *        libraries. However, DynamoDB treats them as number type attributes for mathematical operations.
      * @return Returns a reference to this object so that method calls can be chained together.
@@ -593,9 +541,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
      * </p>
      * 
-     * @return An attribute of type Binary Set. For example:</p>
-     *         <p>
-     *         <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
+     * @return An attribute of type Binary Set.
      */
 
     @JsonProperty("BS") public java.util.List<java.nio.ByteBuffer> getBS() {
@@ -611,9 +557,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param bS
-     *        An attribute of type Binary Set. For example:</p>
-     *        <p>
-     *        <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
+     *        An attribute of type Binary Set.
      */
 
     @JsonProperty("BS") public void setBS(java.util.List<java.nio.ByteBuffer> bS) {
@@ -634,9 +578,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param bS
-     *        An attribute of type Binary Set. For example:</p>
-     *        <p>
-     *        <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
+     *        An attribute of type Binary Set.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -659,9 +601,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param bS
-     *        An attribute of type Binary Set. For example:</p>
-     *        <p>
-     *        <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code>
+     *        An attribute of type Binary Set.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -678,9 +618,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code>
      * </p>
      * 
-     * @return An attribute of type Map. For example:</p>
-     *         <p>
-     *         <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code>
+     * @return An attribute of type Map.
      */
 
     @JsonProperty("M") public java.util.Map<String, AttributeValue> getM() {
@@ -696,9 +634,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param m
-     *        An attribute of type Map. For example:</p>
-     *        <p>
-     *        <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code>
+     *        An attribute of type Map.
      */
 
     @JsonProperty("M") public void setM(java.util.Map<String, AttributeValue> m) {
@@ -714,9 +650,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param m
-     *        An attribute of type Map. For example:</p>
-     *        <p>
-     *        <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code>
+     *        An attribute of type Map.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -754,9 +688,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"L": ["Cookies", "Coffee", 3.14159]</code>
      * </p>
      * 
-     * @return An attribute of type List. For example:</p>
-     *         <p>
-     *         <code>"L": ["Cookies", "Coffee", 3.14159]</code>
+     * @return An attribute of type List.
      */
 
     @JsonProperty("L") public java.util.List<AttributeValue> getL() {
@@ -772,9 +704,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param l
-     *        An attribute of type List. For example:</p>
-     *        <p>
-     *        <code>"L": ["Cookies", "Coffee", 3.14159]</code>
+     *        An attribute of type List.
      */
 
     @JsonProperty("L") public void setL(java.util.List<AttributeValue> l) {
@@ -795,9 +725,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param l
-     *        An attribute of type List. For example:</p>
-     *        <p>
-     *        <code>"L": ["Cookies", "Coffee", 3.14159]</code>
+     *        An attribute of type List.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -820,9 +748,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param l
-     *        An attribute of type List. For example:</p>
-     *        <p>
-     *        <code>"L": ["Cookies", "Coffee", 3.14159]</code>
+     *        An attribute of type List.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -840,9 +766,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param nULLValue
-     *        An attribute of type Null. For example:</p>
-     *        <p>
-     *        <code>"NULL": true</code>
+     *        An attribute of type Null.
      */
 
     @JsonProperty("NULL") public void setNULL(Boolean nULLValue) {
@@ -857,9 +781,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"NULL": true</code>
      * </p>
      * 
-     * @return An attribute of type Null. For example:</p>
-     *         <p>
-     *         <code>"NULL": true</code>
+     * @return An attribute of type Null.
      */
 
     @JsonProperty("NULL") public Boolean getNULL() {
@@ -875,9 +797,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param nULLValue
-     *        An attribute of type Null. For example:</p>
-     *        <p>
-     *        <code>"NULL": true</code>
+     *        An attribute of type Null.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -894,9 +814,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"NULL": true</code>
      * </p>
      * 
-     * @return An attribute of type Null. For example:</p>
-     *         <p>
-     *         <code>"NULL": true</code>
+     * @return An attribute of type Null.
      */
 
     public Boolean isNULL() {
@@ -912,9 +830,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param bOOL
-     *        An attribute of type Boolean. For example:</p>
-     *        <p>
-     *        <code>"BOOL": true</code>
+     *        An attribute of type Boolean.
      */
 
     @JsonProperty("BOOL") public void setBOOL(Boolean bOOL) {
@@ -929,9 +845,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"BOOL": true</code>
      * </p>
      * 
-     * @return An attribute of type Boolean. For example:</p>
-     *         <p>
-     *         <code>"BOOL": true</code>
+     * @return An attribute of type Boolean.
      */
 
     @JsonProperty("BOOL") public Boolean getBOOL() {
@@ -947,9 +861,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * </p>
      * 
      * @param bOOL
-     *        An attribute of type Boolean. For example:</p>
-     *        <p>
-     *        <code>"BOOL": true</code>
+     *        An attribute of type Boolean.
      * @return Returns a reference to this object so that method calls can be chained together.
      */
 
@@ -966,9 +878,7 @@ public class AttributeValue implements Serializable, Cloneable {
      * <code>"BOOL": true</code>
      * </p>
      * 
-     * @return An attribute of type Boolean. For example:</p>
-     *         <p>
-     *         <code>"BOOL": true</code>
+     * @return An attribute of type Boolean.
      */
 
     public Boolean isBOOL() {
