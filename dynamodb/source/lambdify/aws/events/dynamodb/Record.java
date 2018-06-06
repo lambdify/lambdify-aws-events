@@ -1,7 +1,6 @@
 package lambdify.aws.events.dynamodb;
 
 import java.io.Serializable;
-import javax.xml.bind.annotation.XmlTransient;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
@@ -43,13 +42,8 @@ public class Record implements Serializable {
         return this;
     }
 
-    @XmlTransient
-    public void setEventName(OperationType eventName) {
-        this.eventName = eventName.toString();
-    }
-
     public Record withEventName(OperationType eventName) {
-        this.setEventName(eventName);
+        this.setEventName(eventName.toString());
         return this;
     }
 

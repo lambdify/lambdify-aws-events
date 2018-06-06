@@ -176,10 +176,6 @@ public class StreamRecord implements Serializable {
         return this;
     }
 
-    public void setStreamViewType(StreamViewType streamViewType) {
-        this.streamViewType = streamViewType.toString();
-    }
-
     public StreamRecord withStreamViewType(StreamViewType streamViewType) {
         this.setStreamViewType(streamViewType.toString());
         return this;

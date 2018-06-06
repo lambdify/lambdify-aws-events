@@ -72,6 +72,7 @@ public class DynamodbEvent implements Serializable, Cloneable {
      * Gets the list of DynamoDB event records
      * @return list of dynamodb event records
      */
+    @JsonProperty("Records")
     public List<DynamodbStreamRecord> getRecords() {
         return records;
     }
@@ -80,6 +81,7 @@ public class DynamodbEvent implements Serializable, Cloneable {
      * Sets the list of DynamoDB event records
      * @param records a list of DynamoDb event records
      */
+    @JsonProperty("Records")
     public void setRecords(List<DynamodbStreamRecord> records) {
         this.records = records;
     }
