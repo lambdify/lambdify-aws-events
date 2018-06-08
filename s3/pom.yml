@@ -15,3 +15,5 @@ scm: { url: "git@github.com:lambdify/lambdify.git" }
 dependencies:
  #- { groupId: com.amazonaws, artifactId: aws-java-sdk-s3, version: "1.11.163" }
  - { groupId: com.fasterxml.jackson.core, artifactId: jackson-annotations, version: "${version.jackson}", scope: "provided" }
+ #- { groupId: com.fasterxml.jackson.core, artifactId: jackson-databind, version: "${version.jackson}", scope: "test" }
+ - { groupId: com.jsoniter, artifactId: jsoniter, version: "0.9.19", scope: "test" }
