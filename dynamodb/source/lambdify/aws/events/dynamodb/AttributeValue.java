@@ -888,4 +888,24 @@ public class AttributeValue implements Serializable, Cloneable {
     public static AttributeValue create(){
         return new AttributeValue();
     }
+
+    public static AttributeValue create( long number ) {
+        return create().withN( String.valueOf( number ) );
+    }
+
+    public static AttributeValue create( double number ) {
+        return create().withN( String.valueOf( number ) );
+    }
+
+    public static AttributeValue create( int number ) {
+        return create().withN( String.valueOf( number ) );
+    }
+
+    public static AttributeValue create( boolean bool ) {
+        return create().withBOOL( bool );
+    }
+
+    public static AttributeValue create( String str ) {
+        return create().withS( str );
+    }
 }
