@@ -10,4 +10,7 @@ groupId: org.lambdify
 artifactId: lambdify-aws-events-apigateway
 packaging: jar
 
+properties:
+  version.lombok: 1.18.4
+
 scm: { url: "git@github.com:lambdify/lambdify.git" }
