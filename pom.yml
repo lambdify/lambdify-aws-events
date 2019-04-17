@@ -17,5 +17,7 @@ modules:
  - "apigateway"
  - "dynamodb"
  - "s3"
+ - "kinesis"
+ - "sqs"
 
 scm: { url: "git@github.com:lambdify/lambdify.git" }
