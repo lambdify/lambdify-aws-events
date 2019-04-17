@@ -7,15 +7,15 @@ parent:
   relativePath: "../pom.yml"
 
 groupId: org.lambdify
-artifactId: lambdify-aws-events-dynamodb
+artifactId: lambdify-aws-events-kinesis
 packaging: jar
 
 properties:
-  version.lombok: 1.18.4
+  version.lombok: 1.18.6
 
 scm: { url: "git@github.com:lambdify/lambdify.git" }
 
 dependencies:
- #- { groupId: com.amazonaws, artifactId: aws-java-sdk-s3, version: "1.11.163" }
  - { groupId: com.fasterxml.jackson.core, artifactId: jackson-annotations, version: "${version.jackson}", scope: "provided" }
- - { groupId: com.fasterxml.jackson.core, artifactId: jackson-databind, version: "${version.jackson}", scope: "test" }
+ - { groupId: com.jsoniter, artifactId: jsoniter, version: "0.9.19", scope: "test" }
+
