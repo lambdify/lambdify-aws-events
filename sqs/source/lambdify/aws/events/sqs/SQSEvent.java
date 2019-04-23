@@ -13,6 +13,7 @@
  */
 package lambdify.aws.events.sqs;
 
+import com.fasterxml.jackson.annotation.*;
 import lombok.*;
 
 import java.io.*;
@@ -28,6 +29,7 @@ public class SQSEvent implements Serializable, Cloneable {
 
     private static final long serialVersionUID = -5663700178408796225L;
 
+    @JsonProperty("Records")
     List<SQSMessage> records;
 
     @Data
